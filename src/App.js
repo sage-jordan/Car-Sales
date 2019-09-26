@@ -31,7 +31,11 @@ const App = props => {
   );
 };
 
+const mapStateToProps = (state) => {
+  return { props: state }
+};
+
 export default connect(
-  () => {},
+  mapStateToProps,
   {}
-)(Title);
+)(App);
