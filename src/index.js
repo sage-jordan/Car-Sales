@@ -11,4 +11,6 @@ import { featureReducer } from './reducers/featureReducer';
 const store = createStore(featureReducer)
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(
+    <App />, 
+    rootElement);
