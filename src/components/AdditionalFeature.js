@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 import { addFeature } from '../actions/index';
 
 const AdditionalFeature = props => {
-
+  console.log(props);
   const onClickFeature = e => {
     e.preventDefault();
-    props.addFeature(props.feature);
+    props.addFeature(props.props.feature);
   };
 
   return (
@@ -25,5 +25,5 @@ const mapStateToProps = (state) => {
 
 export default connect(
   mapStateToProps,
-  {addFeature}
+  { addFeature }
 )(AdditionalFeature);
